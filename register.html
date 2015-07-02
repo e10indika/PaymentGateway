@@ -1,0 +1,93 @@
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>PERA.PAY REGISTRATION FORM</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Interphase</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="transaction.html">Transaction</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major">
+						<h2>PERA.PAY REGISTRATION FORM</h2>
+
+					</header>
+
+					
+<body>
+<form action="reg.php" method="POST" onsubmit="return myFunction()" enctype="multipart/form-data">
+<table align="center">
+<tr><td>User Email</td><td>:</td><td><input type="email" name="uemail" id="umail" required></td><td><p name="useremail" id="useremail"></p></td></tr>
+<tr><td>User password</td><td>:</td><td><input type="password" name="upw" id="upw" required ></td><td><p name="userpw" id="userpw"></p></td></tr>
+<tr><td>Re-enter password</td><td>:</td><td><input type="password" name="re-pw" id="re-pw" required ></td><td><p name="re-enterpw" id="re-enterpw"></p></td></tr>
+<tr><td>User Name</td><td>:</td><td><input type="text" name="uname" id="uname" ></td><td><p name="username" id="username"></p></td></tr>
+<tr><td>User Mobile</td><td>:</td><td><input type="text" name="umobile" id="umobile" ></td><td><p name="usermobile" id="usermobile"></p></td></tr>
+<tr><td>User Contry</td><td>:</td><td><input type="text" name="ucontry" id="ucontry" ></td><td><p name="usercontry" id="usercontry"></p></td></tr>
+<tr><td>User Citizen ID No</td><td>:</td><td><input type="text" name="ucitizenid" id="ucitizenid" ></td><td><p name="usercitizenid" id="usercitizenid"></p></td></tr>
+<tr><td>User Birth Day</td><td>:</td><td><input type="date" name="ubd" id="ubd"></td><td><p name="userbd" id="userbd" ></p></td></tr>
+<tr><td>Billing Address</td><td>:</td><td><input type="text" name="billadd" id="billadd"></td><td><p name="billingadd" id="billingadd" ></p></td></tr>
+<tr><td>Shipping Address</td><td>:</td><td><input type="text" name="shipadd" id="shipadd"></td><td><p name="shipingadd" id="shipingadd"></p></td></tr>
+<tr><td>User Card No</td><td>:</td><td><input type="text" name="ucardno" id="ucardno"></td><td><p name="usercardno" id="usercardno" required></p></td></tr>
+<tr><td>User Account No</td><td>:</td><td><input type="text" name="uaccno" id="uaccno"></td><td><p name="useraccno" id="useraccno" required></p></td></tr>
+<tr><td>User Fingerprint</td><td>:</td><td><input type="file" name="ufp" id="ufp"></td><td><p name="userfp" id="userfp" required></p></td></tr>
+
+<tr><td colspan="4">By Clicking Submit Button You are agree with the terms and conditions.</td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td><input type="submit" value="Submit"></td><td></td><td><input type="reset" value="Reset"></td><td></td></tr>
+</table></form>
+				</div>
+			</section>
+
+		<!-- Footer -->
+
+
+	</body>
+<script>
+	
+  function myFunction() {
+    var pass1 = document.getElementById("upw").value;
+    var pass2 = document.getElementById("re-pw").value;
+    var ok = true;
+    if (pass1 != pass2) {
+        document.getElementById("upw").style.borderColor = "#E34234";
+        document.getElementById("re-pw").style.borderColor = "#E34234";
+        ok = false;
+		alert("Passwords Does not Match!!!");
+    }
+    else {
+        ok = true;
+    }
+    return ok;
+}
+</script>
+</html>
